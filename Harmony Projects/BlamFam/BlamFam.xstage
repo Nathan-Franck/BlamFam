@@ -63,7 +63,7 @@
      <elementSeq exposures="17,20" val="4" id="1"/>
     </column>
     <column type="0" name="ATV-0BAF85CDF0E09182" displayOrder="0" width="100" anonymous="true" id="2">
-     <elementSeq exposures="1-20" val="8" id="2"/>
+     <elementSeq exposures="1-20" val="6" id="2"/>
     </column>
     <column type="0" name="ATV-0BAF85CDF0E0922E" displayOrder="0" width="100" anonymous="true" id="3">
      <elementSeq exposures="1-11,12-14" val="1" id="3"/>
@@ -704,7 +704,7 @@
            <tomato val="Tomato"/>
           </attrs>
          </skin>
-         <currentskin val="Tomato"/>
+         <currentskin val="Broccoli"/>
          <skinEmpty>
           <metas>
            <meta keyword="idle" displayName="idle" flags="15" type="STRING" linkable="false"/>

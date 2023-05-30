@@ -12,4 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df25646161638a04ab1702e3423436ee, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
-  volume: 0
+  dudePrefab: {fileID: 5754355860299018482, guid: dd393ac68b2ca884a936310d8881b308, type: 3}
+  veggieBaddyPrefab: {fileID: -7012332513657273500, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  fxPrefab: {fileID: 7456110486677839407, guid: bfe7ab71be5a8394bad6cde437e57314, type: 3}
+  speed: 10
+  jumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 6.1320753
+      outSlope: 6.1320753
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.049617473
+    - serializedVersion: 3
+      time: 0.50740933
+      value: 1.5384154
+      inSlope: 0.0225226
+      outSlope: 0.0225226
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.38805115
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.99583435
+      value: -0.0070762634
+      inSlope: -6.2261558
+      outSlope: -6.2261558
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04234795
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fireRate: 20
+  bulletSpeed: 20
+  bulletColors:
+  - {r: 0.4764151, g: 0.6200356, b: 1, a: 1}
+  - {r: 0.98455733, g: 1, b: 0.6084906, a: 1}
+  - {r: 0.9567672, g: 0.5424528, b: 1, a: 1}
+  baddieSpawnRate: 1
+  baddieSpeed: 1
+  baddieRadius: 1
+  baddieHealth: 5
+  deadBaddieMass: 3
+  deadBaddieInertia: 1
+  deadBaddieSpin: 0.004
+  deadBaddieAngularDrag: 1

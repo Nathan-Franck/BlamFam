@@ -52,13 +52,13 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 770322678988290491, guid: ba98afde91c52b3468bba29bcb0a6824, type: 3}
   - {fileID: -8485098013507424243, guid: ba98afde91c52b3468bba29bcb0a6824, type: 3}
   - {fileID: -6737087542533209954, guid: ba98afde91c52b3468bba29bcb0a6824, type: 3}
-  - {fileID: 770322678988290491, guid: ba98afde91c52b3468bba29bcb0a6824, type: 3}
   m_PackedSpriteNamesToIndex:
+  - HD-SLY_Level_FX-bake_level_shading_0.png
   - HD-SLY_Level_FX-bake_sky_shading_0.png
   - HD-SLY_Level_FX-level_base_0.png
-  - HD-SLY_Level_FX-bake_level_shading_0.png
   m_RenderDataMap: {}
   m_Tag: SLY_Level_Base Atlas
   m_IsVariant: 0

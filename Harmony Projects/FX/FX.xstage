@@ -50,6 +50,7 @@
   <convertPalettesColorSpace val="true"/>
  </options>
  <timelineMarkers>
+  <timelineMarker markerStart="1" markerLength="4" colour="#FF0000FF" note="" name="Shield"/>
   <timelineMarker markerStart="5" markerLength="8" colour="#FF0000FF" note="" name="SphereImpact"/>
   <timelineMarker markerStart="14" markerLength="5" colour="#FF0000FF" note="" name="SphereCrack"/>
   <timelineMarker markerStart="20" markerLength="4" colour="#FF0000FF" note="" name="ProjectileA"/>
@@ -57,7 +58,7 @@
   <timelineMarker markerStart="40" markerLength="4" colour="#FF0000FF" note="" name="ProjectileC"/>
  </timelineMarkers>
  <scenes>
-  <scene name="Top" id="0baf85cdf0efa9a6" nbframes="60" startFrame="5" stopFrame="12">
+  <scene name="Top" id="0baf85cdf0efa9a6" nbframes="60" startFrame="1" stopFrame="4">
    <columns>
     <column type="0" name="Drawing" displayOrder="0" width="100" anonymous="true" id="1">
      <elementSeq exposures="1" val="1" id="1"/>
@@ -91,6 +92,7 @@
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8A6" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="25,40" yLocal="-4.2934406030425976e-17" y="-4.2934406030425976e-17"/>
       <pt constSeg="false" x="1" yLocal="0" y="0"/>
@@ -109,6 +111,7 @@
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8A7" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="1" yLocal="0" y="0"/>
       <pt constSeg="false" x="25,40" yLocal="1.0538445116559103e-16" y="1.0538445116559103e-16"/>
@@ -127,12 +130,14 @@
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8A8" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="1,25-36,40" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8A9" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="32" yLocal="0.99999999999998956" y="0.99999999999998956"/>
       <pt constSeg="false" x="36" yLocal="0.99999999999998967" y="0.99999999999998967"/>
@@ -151,6 +156,7 @@
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8AA" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="25,40" yLocal="0.999999999999999" y="0.999999999999999"/>
       <pt constSeg="false" x="27,29" yLocal="0.99999999999999956" y="0.99999999999999956"/>
@@ -165,6 +171,7 @@
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8AB" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="36" yLocal="-284.00876528355627" y="-284.00876528355627"/>
       <pt constSeg="false" x="35" yLocal="-251.02956525288758" y="-251.02956525288758"/>
@@ -182,6 +189,7 @@
     </column>
     <column type="3" name="ATV-0BAF8E0236C5A8AC" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="false" x="35" yLocal="-1.618107194194565e-13" y="-1.618107194194565e-13"/>
       <pt constSeg="false" x="34" yLocal="-1.1092184451604019e-13" y="-1.1092184451604019e-13"/>

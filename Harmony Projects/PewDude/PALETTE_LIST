@@ -1,3 +1,5 @@
 ToonBoomAnimationInc PaletteList 1
-palette-library/PewDude LINK "C:/Projects/Coding/BlamFam/Harmony Projects/PewDude/palette-library/PewDude.plt"
+palette-library/TypeA LINK "C:/Projects/Coding/BlamFam/Harmony Projects/PewDude/palette-library/TypeA.plt"
+palette-library/TypeB LINK "C:/Projects/Coding/BlamFam/Harmony Projects/PewDude/palette-library/TypeB.plt"
+palette-library/TypeC LINK "C:/Projects/Coding/BlamFam/Harmony Projects/PewDude/palette-library/TypeC.plt"
 palette-library/PewDude_pencil_texture LINK "C:/Projects/Coding/BlamFam/Harmony Projects/PewDude/palette-library/PewDude_pencil_texture.plt"

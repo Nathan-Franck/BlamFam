@@ -60,8 +60,32 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: -8585968017494354324, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: -7407137739063395676, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: -5683637441461726431, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: -3386368656167443273, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: -3262099998065452879, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: -1837023695472285800, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: 331496152573747663, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: 3256916205146195356, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: 3643570837507907847, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: 7463714418275816416, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: 7642723558613829031, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  - {fileID: 8900308061431737552, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - HD-BlamFam-Body_0.png
+  - HD-BlamFam-Eyes_1.png
+  - HD-BlamFam-Body_4.png
+  - HD-BlamFam-Eyes_2.png
+  - HD-BlamFam-LegB_0.png
+  - HD-BlamFam-LegA_0.png
+  - HD-BlamFam-Eyes_3.png
+  - HD-BlamFam-LegA_1.png
+  - HD-BlamFam-Eyes_0.png
+  - HD-BlamFam-Body_5.png
+  - HD-BlamFam-Body_7.png
+  - HD-BlamFam-LegB_1.png
   m_RenderDataMap: {}
   m_Tag: VeggieBaddies Atlas
   m_IsVariant: 0
