@@ -19,6 +19,7 @@ public class Game : MonoBehaviour
     public class BulletState
     {
         public GameObject instance;
+        public Color color;
         public Vector2 position;
         public Vector2 velocity;
     }
@@ -40,17 +41,32 @@ public class Game : MonoBehaviour
         public float angularVelocity;
     }
 
+    public class FXState
+    {
+        public GameObject instance;
+        public GameObject parent;
+        public float startTime;
+    }
+
     public float lastBaddieSpawnTime;
 
-    public List<DudeState> dudes = new List<DudeState>();
-    public List<BulletState> bullets = new List<BulletState>();
-    public List<BaddieState> baddies = new List<BaddieState>();
-    public List<DeadBaddieState> deadBaddies = new List<DeadBaddieState>();
+    public HashSet<DudeState> dudes = new HashSet<DudeState>();
+    public HashSet<BulletState> bullets = new HashSet<BulletState>();
+    public HashSet<BaddieState> baddies = new HashSet<BaddieState>();
+    public HashSet<DeadBaddieState> deadBaddies = new HashSet<DeadBaddieState>();
+    public HashSet<FXState> fxInstances = new HashSet<FXState>();
 
     public static string[] bulletClips = new string[] {
         "Drawing_projectilec",
         "Drawing_projectileb",
         "Drawing_projectilea",
+    };
+
+    public static string shieldFXClip = "Drawing_shield";
+
+    public static string[] hitFXClip = new string[] {
+        "Drawing_spherecrack",
+        "Drawing_sphereimpact",
     };
 
     public void OnPlayerJoined(PlayerInput playerInput)
@@ -66,6 +82,12 @@ public class Game : MonoBehaviour
 
     void LateUpdate()
     {
+        var baddiesToDestroy = new HashSet<BaddieState>();
+        var baddiesToRemove = new HashSet<BaddieState>();
+        var deadBaddiesToDestroy = new HashSet<DeadBaddieState>();
+        var bulletsToDestroy = new HashSet<BulletState>();
+        var fxInstancesToDestroy = new HashSet<FXState>();
+
         // Get bounds of game from bounds of the camera
         Rect cameraBounds;
         {
@@ -78,6 +100,22 @@ public class Game : MonoBehaviour
                 cameraWidth,
                 cameraHeight
             );
+        }
+
+        // Update fx.
+        foreach (var fxInstance in fxInstances)
+        {
+            // current state is "Empty" then destroy.
+            var animator = fxInstance.instance.GetComponent<Animator>();
+            var currentState = animator.GetCurrentAnimatorStateInfo(0);
+            if (currentState.IsName("Empty") || fxInstance.parent == null)
+            {
+                fxInstancesToDestroy.Add(fxInstance);
+            }
+            else
+            {
+                fxInstance.instance.transform.position = fxInstance.parent.transform.position;
+            }
         }
 
         // Spawn baddies
@@ -119,84 +157,82 @@ public class Game : MonoBehaviour
         }
 
         // Move baddies
-        for (var i = 0; i < baddies.Count; i++)
+        foreach (var baddie in baddies)
         {
-            baddies[i].position += Time.deltaTime * baddies[i].velocity;
-            baddies[i].instance.transform.position = baddies[i].position;
+            baddie.position += Time.deltaTime * baddie.velocity;
+            baddie.instance.transform.position = baddie.position;
 
             // Once baddie exits camera bounds, destroy it
-            if (!cameraBounds.Contains(baddies[i].position))
+            if (!cameraBounds.Contains(baddie.position))
             {
-                Destroy(baddies[i].instance);
-                baddies.RemoveAt(i);
-                i--;
+                baddiesToDestroy.Add(baddie);
             }
         }
 
         // Move dead baddies
-        for (var i = 0; i < deadBaddies.Count; i++)
+        foreach(var deadBaddie in deadBaddies)
         {
-            deadBaddies[i].position += Time.deltaTime * deadBaddies[i].velocity;
-            deadBaddies[i].angle += Time.deltaTime * deadBaddies[i].angularVelocity;
-            deadBaddies[i].instance.transform.position = deadBaddies[i].position;
-            deadBaddies[i].instance.transform.rotation = Quaternion.Euler(0f, 0f, deadBaddies[i].angle);
+            // Once dead baddie exits camera bounds, destroy it
+            if (deadBaddie.instance == null || !cameraBounds.Contains(deadBaddie.position))
+            {
+                deadBaddiesToDestroy.Add(deadBaddie);
+                break;
+            }
+
+            deadBaddie.position += Time.deltaTime * deadBaddie.velocity;
+            deadBaddie.angle += Time.deltaTime * deadBaddie.angularVelocity;
+            deadBaddie.instance.transform.position = deadBaddie.position;
+            deadBaddie.instance.transform.rotation = Quaternion.Euler(0f, 0f, deadBaddie.angle);
 
             // Angular drag
-            deadBaddies[i].angularVelocity -= Time.deltaTime * settings.deadBaddieAngularDrag * deadBaddies[i].angularVelocity;
+            deadBaddie.angularVelocity -= Time.deltaTime * settings.deadBaddieAngularDrag * deadBaddie.angularVelocity;
 
             // Change velocity based on angular velocity (ping pong ball physics)
-            var velocityTangent = new Vector2(-deadBaddies[i].velocity.y, deadBaddies[i].velocity.x);
-            deadBaddies[i].velocity += Time.deltaTime * deadBaddies[i].angularVelocity * velocityTangent * settings.deadBaddieSpin;
-
-            // Once dead baddie exits camera bounds, destroy it
-            if (!cameraBounds.Contains(deadBaddies[i].position))
-            {
-                Destroy(deadBaddies[i].instance);
-                deadBaddies.RemoveAt(i);
-                i--;
-            }
+            var velocityTangent = new Vector2(-deadBaddie.velocity.y, deadBaddie.velocity.x);
+            deadBaddie.velocity += Time.deltaTime * deadBaddie.angularVelocity * velocityTangent * settings.deadBaddieSpin;
         }
 
 
         // Dudes
-        for (var i = 0; i < dudes.Count; i++)
+        var i = 0;
+        foreach (var dude in dudes)
         {
-            var currentState = dudes[i].instance.Animator.GetCurrentAnimatorStateInfo(0);
+            var currentState = dude.instance.Animator.GetCurrentAnimatorStateInfo(0);
             var airborne = currentState.IsName("Body-P_jumpmid");
             var landing = currentState.IsName("Body-P_jumpland");
             var jumping = currentState.IsName("Body-P_jumpstart");
-            var mobile = currentState.IsName("Body-P_idle");
-            var grounded = mobile || landing;
+            var idle = currentState.IsName("Body-P_idle");
+            var grounded = idle || landing;
 
-            if (mobile)
+            if (idle)
             {
                 // If jump, set the animator trigger
-                if (dudes[i].instance.PlayerInput.actions["Jump"].triggered)
+                if (dude.instance.PlayerInput.actions["Jump"].triggered)
                 {
-                    dudes[i].instance.Animator.SetTrigger("Jump");
-                    dudes[i].instance.Animator.Update(0f);
+                    dude.instance.Animator.SetTrigger("Jump");
+                    dude.instance.Animator.Update(0f);
                 }
 
                 // Set velocity based on input
-                dudes[i].velocity = dudes[i].instance.PlayerInput.actions["Move"].ReadValue<Vector2>() * settings.speed;
+                dude.velocity = dude.instance.PlayerInput.actions["Move"].ReadValue<Vector2>() * settings.speed;
 
                 // If player caught outside of camera bounds, force a jump towards the center
-                if (!cameraBounds.Contains(dudes[i].position))
+                if (!cameraBounds.Contains(dude.position))
                 {
-                    dudes[i].velocity = (Vector2.zero - dudes[i].position).normalized * settings.speed;
-                    dudes[i].instance.Animator.SetTrigger("Jump");
+                    dude.velocity = (Vector2.zero - dude.position).normalized * settings.speed;
+                    dude.instance.Animator.SetTrigger("Jump");
                     // Force update of animator
-                    dudes[i].instance.Animator.Update(0f);
+                    dude.instance.Animator.Update(0f);
                 }
             }
 
             // Firing
             if (grounded)
             {
-                var fire = dudes[i].instance.PlayerInput.actions["Fire"].ReadValue<float>() > 0.5f;
-                if (fire && dudes[i].lastFireTime + 1.0f / settings.fireRate < Time.time)
+                var fire = dude.instance.PlayerInput.actions["Fire"].ReadValue<float>() > 0.5f;
+                if (fire && dude.lastFireTime + 1.0f / settings.fireRate < Time.time)
                 {
-                    dudes[i].lastFireTime = Time.time;
+                    dude.lastFireTime = Time.time;
                     var instance = Instantiate(settings.fxPrefab);
                     {
                         var animator = instance.GetComponent<Animator>();
@@ -210,86 +246,152 @@ public class Game : MonoBehaviour
                     var bullet = new BulletState
                     {
                         instance = instance,
-                        position = dudes[i].position + dudes[i].instance.PeletteSourceOffset,
+                        color = settings.bulletColors[i],
+                        position = dude.position + dude.instance.PeletteSourceOffset,
                         velocity = Vector2.right * settings.bulletSpeed,
                     };
                     bullets.Add(bullet);
                 }
             }
 
-            if (mobile || airborne)
+            if (landing)
             {
-                dudes[i].position += Time.deltaTime * dudes[i].velocity;
+                dude.position += Time.deltaTime * dude.velocity * settings.landingSpeedMultiplier;
+            }
+
+            if (idle)
+            {
+                dude.position += Time.deltaTime * dude.velocity;
+            }
+
+            if (airborne)
+            {
+                dude.position += Time.deltaTime * dude.velocity * settings.jumpSpeedMultiplier;
             }
 
             // Visuals
             {
-                dudes[i].instance.transform.position = dudes[i].position;
+                dude.instance.transform.position = dude.position;
 
                 // Offset position upwards based on jump curve
                 if (airborne)
                 {
-                    dudes[i].instance.transform.position += Vector3.up * settings.jumpCurve.Evaluate(currentState.normalizedTime);
+                    dude.instance.transform.position += Vector3.up * settings.jumpCurve.Evaluate(currentState.normalizedTime);
                 }
             }
+            i++;
         }
 
         // Bullet updates.
-        var baddiesToRemove = new List<int>();
-        var bulletsToDestroy = new List<int>();
-        for (var i = 0; i < bullets.Count; i++)
+        foreach (var bullet in bullets)
         {
-            bullets[i].position += Time.deltaTime * bullets[i].velocity;
-            bullets[i].instance.transform.position = bullets[i].position;
+            bullet.position += Time.deltaTime * bullet.velocity;
+            bullet.instance.transform.position = bullet.position;
 
             // Once bullet exits camera bounds, destroy it
-            if (!cameraBounds.Contains(bullets[i].position))
+            if (!cameraBounds.Contains(bullet.position))
             {
-                Destroy(bullets[i].instance);
-                bullets.RemoveAt(i);
-                i--;
+                bulletsToDestroy.Add(bullet);
+                break;
             }
 
             // Check all baddies, if within radius, destroy bullet and baddie
-            for (var j = 0; j < baddies.Count; j++)
+            foreach (var baddie in baddies)
             {
-                if (Vector2.Distance(bullets[i].position, baddies[j].position) < settings.baddieRadius)
+                if (Vector2.Distance(bullet.position, baddie.position) < settings.baddieRadius)
                 {
-                    bulletsToDestroy.Add(i);
+                    bulletsToDestroy.Add(bullet);
 
-                    baddies[j].health = baddies[j].health - 1;
-                    if (baddies[j].health <= 0)
+                    baddie.health = baddie.health - 1;
+                    if (baddie.health <= 0)
                     {
                         // Add to dead baddies, remove from baddies, set velocity and angular velocity of dead baddy based on location and velocity of bullet
                         // We will use basic billiard ball physics to bounce the dead baddies around
-                        var collisionNormal = (baddies[j].position - bullets[i].position).normalized;
+                        var collisionNormal = (baddie.position - bullet.position).normalized;
                         var collisionTangent = new Vector2(-collisionNormal.y, collisionNormal.x);
-                        var collisionForce = Vector2.Dot(bullets[i].velocity, collisionNormal);
+                        var collisionForce = Vector2.Dot(bullet.velocity, collisionNormal);
                         var deadBaddie = new DeadBaddieState
                         {
-                            instance = baddies[j].instance,
-                            position = baddies[j].position,
-                            velocity = baddies[j].velocity + collisionNormal * collisionForce / settings.deadBaddieMass,
+                            instance = baddie.instance,
+                            position = baddie.position,
+                            velocity = baddie.velocity + collisionNormal * collisionForce / settings.deadBaddieMass,
                             angle = 0,
-                            angularVelocity = -Vector2.Dot(bullets[i].velocity, collisionTangent) / settings.deadBaddieInertia * 180f / Mathf.PI,
+                            angularVelocity = -Vector2.Dot(bullet.velocity, collisionTangent) / settings.deadBaddieInertia * 180f / Mathf.PI,
                         };
                         deadBaddies.Add(deadBaddie);
-                        baddiesToRemove.Add(j);
+                        baddiesToRemove.Add(baddie);
+
+                        // Trigger "Hit" on baddie animator
+                        baddie.instance.GetComponent<Animator>().SetTrigger("Hit");
+                        SpawnFx(baddie.instance, bullet.color, settings.baddieRadius, hitFXClip[Random.Range(0, hitFXClip.Length)]);
+
+                        // Change color on tbg renderer to bullet color - blend in dark color
+                        var color = bullet.color * new Color(0.85f, 0.85f, 0.85f, 1f);
+                        baddie.instance.GetComponent<TBGRenderer>().SetColor(color);
+                    }
+                    else
+                    {
+                        // Spawn fx for shield
+                        SpawnFx(baddie.instance, bullet.color, settings.baddieRadius, shieldFXClip);
                     }
 
                     break;
                 }
             }
         }
-        // Remove deferred bullets/baddies.
-        foreach (var bulletIndex in bulletsToDestroy)
+        
+        foreach (var baddie in baddiesToDestroy)
         {
-            Destroy(bullets[bulletIndex].instance);
-            bullets.RemoveAt(bulletIndex);
+            Destroy(baddie.instance);
+            baddies.Remove(baddie);
         }
-        foreach (var baddieIndex in baddiesToRemove)
+        foreach(var baddie in baddiesToRemove)
         {
-            baddies.RemoveAt(baddieIndex);
+            baddies.Remove(baddie);
         }
+        foreach (var deadBaddie in deadBaddiesToDestroy)
+        {
+            Destroy(deadBaddie.instance);
+            deadBaddies.Remove(deadBaddie);
+        }
+        foreach (var bullet in bulletsToDestroy)
+        {
+            Destroy(bullet.instance);
+            bullets.Remove(bullet);
+        }
+        foreach (var fxInstance in fxInstancesToDestroy)
+        {
+            Destroy(fxInstance.instance);
+            fxInstances.Remove(fxInstance);
+        }
+    }
+    public void SpawnFx(GameObject parent, Color color, float radius, string clip)
+    {
+        // Spawn fx for hit
+        var fxInstance = new FXState
+        {
+            instance = Instantiate(settings.fxPrefab),
+            parent = parent,
+            startTime = Time.time,
+        };
+        // Position
+        {
+            fxInstance.instance.transform.position = parent.transform.position;
+        }
+        // Animator
+        {
+            var animator = fxInstance.instance.GetComponent<Animator>();
+            animator.Play(clip);
+            animator.Update(0f);
+        }
+        // Renderer color
+        {
+            var renderer = fxInstance.instance.GetComponent<TBGRenderer>();
+            renderer.SetColor(color);
+        }
+        {
+            fxInstance.instance.transform.localScale = Vector3.one * settings.fxScale;
+        }
+        fxInstances.Add(fxInstance);
     }
 }

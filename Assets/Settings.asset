@@ -15,7 +15,9 @@ MonoBehaviour:
   dudePrefab: {fileID: 5754355860299018482, guid: dd393ac68b2ca884a936310d8881b308, type: 3}
   veggieBaddyPrefab: {fileID: -7012332513657273500, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
   fxPrefab: {fileID: 7456110486677839407, guid: bfe7ab71be5a8394bad6cde437e57314, type: 3}
-  speed: 10
+  speed: 6
+  jumpSpeedMultiplier: 2
+  landingSpeedMultiplier: 0.5
   jumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -49,17 +51,18 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  fireRate: 20
-  bulletSpeed: 20
+  fireRate: 13
+  bulletSpeed: 30
   bulletColors:
   - {r: 0.4764151, g: 0.6200356, b: 1, a: 1}
-  - {r: 0.98455733, g: 1, b: 0.6084906, a: 1}
+  - {r: 1, g: 0.73973227, b: 0, a: 1}
   - {r: 0.9567672, g: 0.5424528, b: 1, a: 1}
-  baddieSpawnRate: 1
-  baddieSpeed: 1
+  baddieSpawnRate: 2
+  baddieSpeed: 2
   baddieRadius: 1
-  baddieHealth: 5
+  baddieHealth: 4
   deadBaddieMass: 3
   deadBaddieInertia: 1
   deadBaddieSpin: 0.004
   deadBaddieAngularDrag: 1
+  fxScale: 0.2

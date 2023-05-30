@@ -9,6 +9,8 @@ public class Settings : ScriptableObject
     public GameObject veggieBaddyPrefab;
     public GameObject fxPrefab;
     public float speed;
+    public float jumpSpeedMultiplier;
+    public float landingSpeedMultiplier;
     public AnimationCurve jumpCurve;
     public float fireRate;
     public float bulletSpeed;
@@ -21,4 +23,5 @@ public class Settings : ScriptableObject
     public float deadBaddieInertia;
     public float deadBaddieSpin;
     public float deadBaddieAngularDrag;
+    public float fxScale;
 }
