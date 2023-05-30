@@ -1,0 +1,7 @@
+Library/
+temp/
+obj/
+Logs/
+*.csproj
+*~
+*Cloned for Export*

@@ -1,0 +1,2130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project source="Harmony Premium (HarmonyPremium.exe) version 22.0.1 build 19338 2023-03-01 16:52:00" version="2201" build="19338" creator="harmony">
+ <elements>
+  <element id="3" elementName="Body" elementFolder="Body" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="4" elementName="Head" elementFolder="Head" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="5" elementName="Eyes" elementFolder="Eyes" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="6" elementName="Ears" elementFolder="Ears" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="7" elementName="Hands" elementFolder="Hands" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="8" elementName="Gun" elementFolder="Gun" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="9" elementName="LegA" elementFolder="LegA" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="10" elementName="LegB" elementFolder="LegB" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+   </drawings>
+  </element>
+  <element id="11" elementName="Tail" elementFolder="Tail" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+   <drawings>
+    <dwg name="1"/>
+    <dwg name="2"/>
+   </drawings>
+  </element>
+ </elements>
+ <options>
+  <metrics unitAspectRatioX="4" unitAspectRatioY="3" numberOfUnitsX="24" numberOfUnitsY="24" numberOfUnitsZ="12"/>
+  <resolution name="HDTV_1080p24" size="1920,1080" fovFit="VerticalFitFov" fov="41.112090439166927" projection="PerspectiveProjection"/>
+  <framerate val="24"/>
+  <zdragging val="true"/>
+  <zOrderCompatibilityWith7_3 val="false"/>
+  <pixelPerModelUnitForVectorLayers val="0.28800000000000009"/>
+  <pixelPerModelUnitForBitmapLayers val="0.28800000000000009"/>
+  <canvasForBitmapLayers size="3840,2160"/>
+  <imageProcessingFormat val="rgbaFloat"/>
+  <cameraInSymbols val="true"/>
+  <scaleFactor val="1"/>
+  <colorSpace val="sRGB"/>
+  <convertPalettesColorSpace val="true"/>
+ </options>
+ <timelineMarkers>
+  <timelineMarker markerStart="2" markerLength="10" colour="#1E90FFFF" note="" name="Idle"/>
+  <timelineMarker markerStart="13" markerLength="22" colour="#00FFFFFF" note="" name="JumpFull"/>
+  <timelineMarker markerStart="14" markerLength="9" colour="#9932CCFF" note="" name="JumpStart"/>
+  <timelineMarker markerStart="23" markerLength="7" colour="#FF1493FF" note="" name="JumpMid"/>
+  <timelineMarker markerStart="30" markerLength="5" colour="#FF0000FF" note="" name="JumpLand"/>
+ </timelineMarkers>
+ <scenes>
+  <scene name="Top" id="0baf85cdf0e64a0e" nbframes="60" startFrame="13" stopFrame="34">
+   <columns>
+    <column type="0" name="ATV-0BAF85CDF0EC1944" displayOrder="0" width="100" anonymous="true" id="3">
+     <elementSeq exposures="2-39" val="1" id="3"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1A12" displayOrder="0" width="100" anonymous="true" id="4">
+     <elementSeq exposures="2-11,12-39" val="1" id="4"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1AB7" displayOrder="0" width="100" anonymous="true" id="5">
+     <elementSeq exposures="2-11,12-39" val="1" id="5"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1B5C" displayOrder="0" width="100" anonymous="true" id="6">
+     <elementSeq exposures="2-11,12-39" val="1" id="6"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1C01" displayOrder="0" width="100" anonymous="true" id="7">
+     <elementSeq exposures="2-11,12-39" val="1" id="7"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1CA6" displayOrder="0" width="100" anonymous="true" id="8">
+     <elementSeq exposures="2-11,12-39" val="1" id="8"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1D4B" displayOrder="0" width="100" anonymous="true" id="9">
+     <elementSeq exposures="2-11,12-39" val="1" id="9"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EC1DF0" displayOrder="0" width="100" anonymous="true" id="10">
+     <elementSeq exposures="2-11,12-39" val="1" id="10"/>
+    </column>
+    <column type="0" name="ATV-0BAF85CDF0EDCB2D" displayOrder="0" width="100" anonymous="true" id="11">
+     <elementSeq exposures="2-22,29-39" val="1" id="11"/>
+     <elementSeq exposures="23-28" val="2" id="11"/>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2254" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="31" yLocal="-1.9476305104811202" y="-1.9476305104811202"/>
+      <pt constSeg="false" x="17" yLocal="-1.4573099491526618" y="-1.4573099491526618"/>
+      <pt constSeg="false" x="30" yLocal="-1.017845179601274" y="-1.017845179601274"/>
+      <pt constSeg="false" x="20" yLocal="-0.46342356924153827" y="-0.46342356924153827"/>
+      <pt constSeg="false" x="26" yLocal="-0.46342356924153821" y="-0.46342356924153821"/>
+      <pt constSeg="false" x="5" yLocal="-0.063157742180404985" y="-0.063157742180404985"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="29" yLocal="0.24183788510633653" y="0.24183788510633653"/>
+      <pt constSeg="false" x="23" yLocal="0.58920546709858534" y="0.58920546709858534"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2255" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="5" yLocal="-1.3389441342246493" y="-1.3389441342246493"/>
+      <pt constSeg="false" x="29" yLocal="-0.85526830951151545" y="-0.85526830951151545"/>
+      <pt constSeg="false" x="17" yLocal="-0.61678889164258044" y="-0.61678889164258044"/>
+      <pt constSeg="false" x="31" yLocal="-0.31211172676001775" y="-0.31211172676001775"/>
+      <pt constSeg="false" x="30" yLocal="-0.048090201121890663" y="-0.048090201121890663"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="1.5427993652953509" y="1.5427993652953509"/>
+      <pt constSeg="false" x="20" yLocal="1.5427993652953524" y="1.5427993652953524"/>
+      <pt constSeg="false" x="23" yLocal="1.8459565277613157" y="1.8459565277613157"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2256" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2257" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-23.839997500978217" y="-23.839997500978217"/>
+      <pt constSeg="false" x="26" yLocal="-6.7948969693383541" y="-6.7948969693383541"/>
+      <pt constSeg="false" x="2,5,12,14,17,20,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="30" yLocal="10.923380019995889" y="10.923380019995889"/>
+      <pt constSeg="false" x="23" yLocal="12.311155389290908" y="12.311155389290908"/>
+      <pt constSeg="false" x="31" yLocal="14.427589032732984" y="14.427589032732984"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2258" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="23" yLocal="0.94229636614763879" y="0.94229636614763879"/>
+      <pt constSeg="false" x="2,5,12,14,17,20,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="26" yLocal="1.0070736350801455" y="1.0070736350801455"/>
+      <pt constSeg="false" x="31" yLocal="1.0198782454156723" y="1.0198782454156723"/>
+      <pt constSeg="false" x="29-30" yLocal="1.0284455363596861" y="1.0284455363596861"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2259" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="5" yLocal="0.8740760308597606" y="0.8740760308597606"/>
+      <pt constSeg="false" x="31" yLocal="0.91071307547329672" y="0.91071307547329672"/>
+      <pt constSeg="false" x="17" yLocal="0.96337581751658252" y="0.96337581751658252"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="29" yLocal="1.002739125015812" y="1.002739125015812"/>
+      <pt constSeg="false" x="30" yLocal="1.0027391250158122" y="1.0027391250158122"/>
+      <pt constSeg="false" x="26" yLocal="1.0123306347303882" y="1.0123306347303882"/>
+      <pt constSeg="false" x="23" yLocal="1.0871983797696785" y="1.0871983797696785"/>
+      <pt constSeg="false" x="20" yLocal="1.1298300032077864" y="1.1298300032077864"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE225A" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="31" yLocal="-13.461302617848798" y="-13.461302617848798"/>
+      <pt constSeg="false" x="17" yLocal="-9.9185726359269246" y="-9.9185726359269246"/>
+      <pt constSeg="false" x="30" yLocal="-8.9608685796365144" y="-8.9608685796365144"/>
+      <pt constSeg="false" x="29" yLocal="-8.9608685796364487" y="-8.9608685796364487"/>
+      <pt constSeg="false" x="20" yLocal="-2.8313740282519166" y="-2.8313740282519166"/>
+      <pt constSeg="false" x="26" yLocal="-2.2918890798929614" y="-2.2918890798929614"/>
+      <pt constSeg="false" x="5" yLocal="-2.1203984267896487" y="-2.1203984267896487"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="16.170214348671543" y="16.170214348671543"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE225B" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.58148706098699254" y="-0.58148706098699254"/>
+      <pt constSeg="false" x="5" yLocal="-0.063157742180404985" y="-0.063157742180404985"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="9" yLocal="1.8910686289403587e-34" y="1.8910686289403587e-34"/>
+      <pt constSeg="false" x="26" yLocal="0.28910029181806196" y="0.28910029181806196"/>
+      <pt constSeg="false" x="20" yLocal="0.28910029181806468" y="0.28910029181806468"/>
+      <pt constSeg="false" x="31" yLocal="0.42875998572087237" y="0.42875998572087237"/>
+      <pt constSeg="false" x="29" yLocal="0.44699464726907434" y="0.44699464726907434"/>
+      <pt constSeg="false" x="30" yLocal="1.3695834417245418" y="1.3695834417245418"/>
+      <pt constSeg="false" x="23" yLocal="1.4645561016757189" y="1.4645561016757189"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE225C" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="5" yLocal="-1.3389441342246498" y="-1.3389441342246498"/>
+      <pt constSeg="false" x="31" yLocal="-0.030504659772816023" y="-0.030504659772816023"/>
+      <pt constSeg="false" x="9" yLocal="-4.4244536728591244e-16" y="-4.4244536728591244e-16"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="30" yLocal="0.1951198483541301" y="0.1951198483541301"/>
+      <pt constSeg="false" x="17" yLocal="1.1750221427930256" y="1.1750221427930256"/>
+      <pt constSeg="false" x="29" yLocal="1.884249139610926" y="1.884249139610926"/>
+      <pt constSeg="false" x="23" yLocal="2.8724756186365079" y="2.8724756186365079"/>
+      <pt constSeg="false" x="20" yLocal="3.0666973500984258" y="3.0666973500984258"/>
+      <pt constSeg="false" x="26" yLocal="3.3125438996570531" y="3.3125438996570531"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE225D" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,9,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE225E" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="20" yLocal="-34.457846052396228" y="-34.457846052396228"/>
+      <pt constSeg="false" x="29" yLocal="-30.274606790029726" y="-30.274606790029726"/>
+      <pt constSeg="false" x="17" yLocal="-28.406407515746658" y="-28.406407515746658"/>
+      <pt constSeg="false" x="30" yLocal="-27.961615382619748" y="-27.961615382619748"/>
+      <pt constSeg="false" x="26" yLocal="-24.830083757188632" y="-24.830083757188632"/>
+      <pt constSeg="false" x="31" yLocal="-15.137303395014863" y="-15.137303395014863"/>
+      <pt constSeg="false" x="9" yLocal="-5.9985616485813091" y="-5.9985616485813091"/>
+      <pt constSeg="false" x="5" yLocal="-2.5708121350288824" y="-2.5708121350288824"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="2.100853408032525" y="2.100853408032525"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE225F" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="23" yLocal="0.91250505210265798" y="0.91250505210265798"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="5" yLocal="1.0023595543514481" y="1.0023595543514481"/>
+      <pt constSeg="false" x="9" yLocal="1.0055056268202114" y="1.0055056268202114"/>
+      <pt constSeg="false" x="20" yLocal="1.0130083329296253" y="1.0130083329296253"/>
+      <pt constSeg="false" x="17" yLocal="1.0131995194839787" y="1.0131995194839787"/>
+      <pt constSeg="false" x="26" yLocal="1.0452059214136684" y="1.0452059214136684"/>
+      <pt constSeg="false" x="31" yLocal="1.0491912489301309" y="1.0491912489301309"/>
+      <pt constSeg="false" x="30" yLocal="1.0737868733951956" y="1.0737868733951956"/>
+      <pt constSeg="false" x="29" yLocal="1.0983824978602619" y="1.0983824978602619"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2260" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="0.95099941170294389" y="0.95099941170294389"/>
+      <pt constSeg="false" x="9" yLocal="0.99999999999999722" y="0.99999999999999722"/>
+      <pt constSeg="false" x="5" yLocal="0.99999999999999889" y="0.99999999999999889"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="31" yLocal="1.110857528023331" y="1.110857528023331"/>
+      <pt constSeg="false" x="20" yLocal="1.1468809018872188" y="1.1468809018872188"/>
+      <pt constSeg="false" x="30" yLocal="1.1662862920349946" y="1.1662862920349946"/>
+      <pt constSeg="false" x="29" yLocal="1.2217150560466619" y="1.2217150560466619"/>
+      <pt constSeg="false" x="26" yLocal="1.2916694273957536" y="1.2916694273957536"/>
+      <pt constSeg="false" x="23" yLocal="1.5004043629754507" y="1.5004043629754507"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2261" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="20" yLocal="-13.761278444690168" y="-13.761278444690168"/>
+      <pt constSeg="false" x="17" yLocal="-9.9783563815720786" y="-9.9783563815720786"/>
+      <pt constSeg="false" x="9" yLocal="-5.9985616485813047" y="-5.9985616485813047"/>
+      <pt constSeg="false" x="5" yLocal="-2.5708121350288802" y="-2.5708121350288802"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="31" yLocal="2.1354775588618069" y="2.1354775588618069"/>
+      <pt constSeg="false" x="30" yLocal="3.2032163382927119" y="3.2032163382927119"/>
+      <pt constSeg="false" x="29" yLocal="4.2709551177236138" y="4.2709551177236138"/>
+      <pt constSeg="false" x="26" yLocal="7.6054572436518679" y="7.6054572436518679"/>
+      <pt constSeg="false" x="23" yLocal="19.254104183752141" y="19.254104183752141"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2262" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.10831948621628906" y="-0.10831948621628906"/>
+      <pt constSeg="false" x="5" yLocal="-0.027067603792686856" y="-0.027067603792686856"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="9" yLocal="0.084210322907210866" y="0.084210322907210866"/>
+      <pt constSeg="false" x="20" yLocal="0.88556689369483044" y="0.88556689369483044"/>
+      <pt constSeg="false" x="31" yLocal="1.2031624978044482" y="1.2031624978044482"/>
+      <pt constSeg="false" x="26" yLocal="1.8379053159852079" y="1.8379053159852079"/>
+      <pt constSeg="false" x="29" yLocal="1.9957996714362261" y="1.9957996714362261"/>
+      <pt constSeg="false" x="23" yLocal="2.3267286326692918" y="2.3267286326692918"/>
+      <pt constSeg="false" x="30" yLocal="2.6505963041610583" y="2.6505963041610583"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2263" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="5" yLocal="-1.5527782041718772" y="-1.5527782041718772"/>
+      <pt constSeg="false" x="30" yLocal="-1.4943105193045523" y="-1.4943105193045523"/>
+      <pt constSeg="false" x="31" yLocal="-0.86947533750569139" y="-0.86947533750569139"/>
+      <pt constSeg="false" x="17" yLocal="-0.61678889164258388" y="-0.61678889164258388"/>
+      <pt constSeg="false" x="9" yLocal="-0.49894616322521806" y="-0.49894616322521806"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="29" yLocal="0.20630778414517525" y="0.20630778414517525"/>
+      <pt constSeg="false" x="20" yLocal="1.5427993652953484" y="1.5427993652953484"/>
+      <pt constSeg="false" x="26" yLocal="2.2558308670789193" y="2.2558308670789193"/>
+      <pt constSeg="false" x="23" yLocal="4.3664366047488237" y="4.3664366047488237"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2264" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,9,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2265" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="20" yLocal="-34.45784605239627" y="-34.45784605239627"/>
+      <pt constSeg="false" x="29" yLocal="-30.274606790029289" y="-30.274606790029289"/>
+      <pt constSeg="false" x="17" yLocal="-28.406407515746636" y="-28.406407515746636"/>
+      <pt constSeg="false" x="30" yLocal="-27.961615382619446" y="-27.961615382619446"/>
+      <pt constSeg="false" x="26" yLocal="-24.830083757188273" y="-24.830083757188273"/>
+      <pt constSeg="false" x="31" yLocal="-15.137303395014644" y="-15.137303395014644"/>
+      <pt constSeg="false" x="2,5,9,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="2.1008534080330543" y="2.1008534080330543"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2266" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="23" yLocal="0.91250505210268662" y="0.91250505210268662"/>
+      <pt constSeg="false" x="2,5,9,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="20" yLocal="1.0130083329296302" y="1.0130083329296302"/>
+      <pt constSeg="false" x="17" yLocal="1.0131995194839782" y="1.0131995194839782"/>
+      <pt constSeg="false" x="26" yLocal="1.0452059214136937" y="1.0452059214136937"/>
+      <pt constSeg="false" x="31" yLocal="1.0491912489301467" y="1.0491912489301467"/>
+      <pt constSeg="false" x="30" yLocal="1.0737868733952196" y="1.0737868733952196"/>
+      <pt constSeg="false" x="29" yLocal="1.0983824978602932" y="1.0983824978602932"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2267" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="0.95099941170294033" y="0.95099941170294033"/>
+      <pt constSeg="false" x="2,5,9,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="31" yLocal="1.1108575280233159" y="1.1108575280233159"/>
+      <pt constSeg="false" x="20" yLocal="1.1468809018872053" y="1.1468809018872053"/>
+      <pt constSeg="false" x="30" yLocal="1.1662862920349748" y="1.1662862920349748"/>
+      <pt constSeg="false" x="29" yLocal="1.2217150560466317" y="1.2217150560466317"/>
+      <pt constSeg="false" x="26" yLocal="1.2916694273957259" y="1.2916694273957259"/>
+      <pt constSeg="false" x="23" yLocal="1.5004043629754222" y="1.5004043629754222"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2268" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="20" yLocal="-13.761278444690436" y="-13.761278444690436"/>
+      <pt constSeg="false" x="17" yLocal="-9.9783563815720377" y="-9.9783563815720377"/>
+      <pt constSeg="false" x="2,5,9,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="31" yLocal="2.1354775588623403" y="2.1354775588623403"/>
+      <pt constSeg="false" x="30" yLocal="3.2032163382934331" y="3.2032163382934331"/>
+      <pt constSeg="false" x="29" yLocal="4.2709551177246805" y="4.2709551177246805"/>
+      <pt constSeg="false" x="26" yLocal="7.6054572436524674" y="7.6054572436524674"/>
+      <pt constSeg="false" x="23" yLocal="19.254104183752872" y="19.254104183752872"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2269" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.36095045493791855" y="-0.36095045493791855"/>
+      <pt constSeg="false" x="31" yLocal="-0.076834233236760807" y="-0.076834233236760807"/>
+      <pt constSeg="false" x="5" yLocal="-0.072631403506230541" y="-0.072631403506230541"/>
+      <pt constSeg="false" x="7" yLocal="-0.015789435545104258" y="-0.015789435545104258"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="29" yLocal="0.029029774432450247" y="0.029029774432450247"/>
+      <pt constSeg="false" x="26" yLocal="0.56587058296591808" y="0.56587058296591808"/>
+      <pt constSeg="false" x="20" yLocal="0.56587058296592296" y="0.56587058296592296"/>
+      <pt constSeg="false" x="30" yLocal="0.57422066905398106" y="0.57422066905398106"/>
+      <pt constSeg="false" x="23" yLocal="1.536801859699557" y="1.536801859699557"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE226A" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-1.8485467760554788" y="-1.8485467760554788"/>
+      <pt constSeg="false" x="31" yLocal="-1.7237109779731121" y="-1.7237109779731121"/>
+      <pt constSeg="false" x="30" yLocal="-1.5750425921235205" y="-1.5750425921235205"/>
+      <pt constSeg="false" x="5" yLocal="-1.524627896210804" y="-1.524627896210804"/>
+      <pt constSeg="false" x="17" yLocal="-1.3873133462435556" y="-1.3873133462435556"/>
+      <pt constSeg="false" x="7" yLocal="-0.30947293668400011" y="-0.30947293668400011"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="0.46302658774744515" y="0.46302658774744515"/>
+      <pt constSeg="false" x="20" yLocal="0.62655048185232887" y="0.62655048185232887"/>
+      <pt constSeg="false" x="23" yLocal="1.0746102031659985" y="1.0746102031659985"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE226B" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,7,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE226C" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="-17.381732435711093" y="-17.381732435711093"/>
+      <pt constSeg="false" x="29" yLocal="-13.507039318773039" y="-13.507039318773039"/>
+      <pt constSeg="false" x="31" yLocal="-8.0840480986632777" y="-8.0840480986632777"/>
+      <pt constSeg="false" x="26" yLocal="-6.7948969693383514" y="-6.7948969693383514"/>
+      <pt constSeg="false" x="2,5,7,12,14,17,20,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="8.5634836619422288" y="8.5634836619422288"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE226D" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="0.92279312001504021" y="0.92279312001504021"/>
+      <pt constSeg="false" x="23" yLocal="0.93265747706038349" y="0.93265747706038349"/>
+      <pt constSeg="false" x="31" yLocal="0.9485287466665856" y="0.9485287466665856"/>
+      <pt constSeg="false" x="2,5,7,12,14,17,20,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="26" yLocal="1.0070736350801448" y="1.0070736350801448"/>
+      <pt constSeg="false" x="29" yLocal="1.0284455363596874" y="1.0284455363596874"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE226E" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="0.94905196795202629" y="0.94905196795202629"/>
+      <pt constSeg="false" x="2,5,7,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="31" yLocal="1.0158464983911668" y="1.0158464983911668"/>
+      <pt constSeg="false" x="30" yLocal="1.0237697475820822" y="1.0237697475820822"/>
+      <pt constSeg="false" x="29" yLocal="1.1247550770720802" y="1.1247550770720802"/>
+      <pt constSeg="false" x="26" yLocal="1.1266736549474068" y="1.1266736549474068"/>
+      <pt constSeg="false" x="20" yLocal="1.132713961992758" y="1.132713961992758"/>
+      <pt constSeg="false" x="23" yLocal="1.1963247056321316" y="1.1963247056321316"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE226F" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-12.699591800328376" y="-12.699591800328376"/>
+      <pt constSeg="false" x="26" yLocal="-5.9888245192097171" y="-5.9888245192097171"/>
+      <pt constSeg="false" x="17" yLocal="-0.72130826521062574" y="-0.72130826521062574"/>
+      <pt constSeg="false" x="2,5,7,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="20" yLocal="4.9725855855926477" y="4.9725855855926477"/>
+      <pt constSeg="false" x="31" yLocal="10.291504774850596" y="10.291504774850596"/>
+      <pt constSeg="false" x="23" yLocal="11.075066918864215" y="11.075066918864215"/>
+      <pt constSeg="false" x="30" yLocal="15.437257159244428" y="15.437257159244428"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2270" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.36095045493791855" y="-0.36095045493791855"/>
+      <pt constSeg="false" x="5" yLocal="-0.10631553267038368" y="-0.10631553267038368"/>
+      <pt constSeg="false" x="8" yLocal="-0.086315580979957368" y="-0.086315580979957368"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="0.4290288082417068" y="0.4290288082417068"/>
+      <pt constSeg="false" x="31" yLocal="0.50586735814732076" y="0.50586735814732076"/>
+      <pt constSeg="false" x="20" yLocal="0.56587058296592296" y="0.56587058296592296"/>
+      <pt constSeg="false" x="29" yLocal="0.58692316369271924" y="0.58692316369271924"/>
+      <pt constSeg="false" x="30" yLocal="1.5020011886148594" y="1.5020011886148594"/>
+      <pt constSeg="false" x="23" yLocal="1.5901012116383653" y="1.5901012116383653"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2271" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="5" yLocal="-1.6585223096581625" y="-1.6585223096581625"/>
+      <pt constSeg="false" x="17" yLocal="-1.3873133462435556" y="-1.3873133462435556"/>
+      <pt constSeg="false" x="31" yLocal="-1.1666730891407351" y="-1.1666730891407351"/>
+      <pt constSeg="false" x="30" yLocal="-0.84974946264215667" y="-0.84974946264215667"/>
+      <pt constSeg="false" x="29" yLocal="-0.81314277676022884" y="-0.81314277676022884"/>
+      <pt constSeg="false" x="8" yLocal="-0.63915635086702549" y="-0.63915635086702549"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="20" yLocal="0.62655048185232887" y="0.62655048185232887"/>
+      <pt constSeg="false" x="26" yLocal="1.0089758915739639" y="1.0089758915739639"/>
+      <pt constSeg="false" x="23" yLocal="2.4083977030557193" y="2.4083977030557193"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2272" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,8,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2273" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="-17.381732435711179" y="-17.381732435711179"/>
+      <pt constSeg="false" x="29" yLocal="-13.507039318773051" y="-13.507039318773051"/>
+      <pt constSeg="false" x="31" yLocal="-8.0840480986633025" y="-8.0840480986633025"/>
+      <pt constSeg="false" x="26" yLocal="-6.7948969693383541" y="-6.7948969693383541"/>
+      <pt constSeg="false" x="2,5,8,12,14,17,20,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="12.311155389290908" y="12.311155389290908"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2274" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="0.92279312001504288" y="0.92279312001504288"/>
+      <pt constSeg="false" x="23" yLocal="0.94229636614763879" y="0.94229636614763879"/>
+      <pt constSeg="false" x="31" yLocal="0.94852874666658771" y="0.94852874666658771"/>
+      <pt constSeg="false" x="2,5,8,12,14,17,20,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="26" yLocal="1.0070736350801472" y="1.0070736350801472"/>
+      <pt constSeg="false" x="29" yLocal="1.0284455363596896" y="1.0284455363596896"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2275" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="0.94905196795202629" y="0.94905196795202629"/>
+      <pt constSeg="false" x="2,5,8,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="31" yLocal="1.0310391398258463" y="1.0310391398258463"/>
+      <pt constSeg="false" x="30" yLocal="1.0465587097296261" y="1.0465587097296261"/>
+      <pt constSeg="false" x="29" yLocal="1.1092202938757401" y="1.1092202938757401"/>
+      <pt constSeg="false" x="26" yLocal="1.1210597530458795" y="1.1210597530458795"/>
+      <pt constSeg="false" x="20" yLocal="1.132713961992758" y="1.132713961992758"/>
+      <pt constSeg="false" x="23" yLocal="1.2070526457193416" y="1.2070526457193416"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2276" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-8.4288589000752339" y="-8.4288589000752339"/>
+      <pt constSeg="false" x="26" yLocal="-1.7704856133930056" y="-1.7704856133930056"/>
+      <pt constSeg="false" x="17" yLocal="-0.72130826521062574" y="-0.72130826521062574"/>
+      <pt constSeg="false" x="2,5,8,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="20" yLocal="4.9725855855926477" y="4.9725855855926477"/>
+      <pt constSeg="false" x="31" yLocal="12.966604868930503" y="12.966604868930503"/>
+      <pt constSeg="false" x="23" yLocal="16.605744362747011" y="16.605744362747011"/>
+      <pt constSeg="false" x="30" yLocal="19.449907299576296" y="19.449907299576296"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2277" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.36095045493791855" y="-0.36095045493791855"/>
+      <pt constSeg="false" x="5" yLocal="-0.072631403506230541" y="-0.072631403506230541"/>
+      <pt constSeg="false" x="7" yLocal="-0.015789435545104258" y="-0.015789435545104258"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="0.56587058296592285" y="0.56587058296592285"/>
+      <pt constSeg="false" x="20" yLocal="0.56587058296592296" y="0.56587058296592296"/>
+      <pt constSeg="false" x="31" yLocal="0.75519833197131525" y="0.75519833197131525"/>
+      <pt constSeg="false" x="29" yLocal="1.2500794565869988" y="1.2500794565869988"/>
+      <pt constSeg="false" x="23" yLocal="1.5368018596995534" y="1.5368018596995534"/>
+      <pt constSeg="false" x="30" yLocal="1.8219246208268978" y="1.8219246208268978"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2278" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-1.7601259370028963" y="-1.7601259370028963"/>
+      <pt constSeg="false" x="31" yLocal="-1.6761413746606177" y="-1.6761413746606177"/>
+      <pt constSeg="false" x="30" yLocal="-1.6564165261538502" y="-1.6564165261538502"/>
+      <pt constSeg="false" x="5" yLocal="-1.524627896210804" y="-1.524627896210804"/>
+      <pt constSeg="false" x="17" yLocal="-1.3873133462435556" y="-1.3873133462435556"/>
+      <pt constSeg="false" x="7" yLocal="-0.30947293668400011" y="-0.30947293668400011"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="0.46302658774744987" y="0.46302658774744987"/>
+      <pt constSeg="false" x="20" yLocal="0.62655048185232887" y="0.62655048185232887"/>
+      <pt constSeg="false" x="23" yLocal="1.0746102031660023" y="1.0746102031660023"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2279" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,7,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE227A" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="-16.752672915985215" y="-16.752672915985215"/>
+      <pt constSeg="false" x="29" yLocal="-12.875984660092515" y="-12.875984660092515"/>
+      <pt constSeg="false" x="31" yLocal="-7.6646750854303338" y="-7.6646750854303338"/>
+      <pt constSeg="false" x="26" yLocal="-6.7948969693383701" y="-6.7948969693383701"/>
+      <pt constSeg="false" x="2,5,7,12,14,17,20,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="8.5634836619427492" y="8.5634836619427492"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE227B" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="23" yLocal="0.93265747706038638" y="0.93265747706038638"/>
+      <pt constSeg="false" x="30" yLocal="0.97254767549551668" y="0.97254767549551668"/>
+      <pt constSeg="false" x="31" yLocal="0.98169845032674996" y="0.98169845032674996"/>
+      <pt constSeg="false" x="2,5,7,12,14,17,20,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="26" yLocal="1.0070736350801475" y="1.0070736350801475"/>
+      <pt constSeg="false" x="29" yLocal="1.0779350924548814" y="1.0779350924548814"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE227C" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="0.94535698712210769" y="0.94535698712210769"/>
+      <pt constSeg="false" x="17" yLocal="0.94905196795202629" y="0.94905196795202629"/>
+      <pt constSeg="false" x="31" yLocal="0.96357132474091778" y="0.96357132474091778"/>
+      <pt constSeg="false" x="2,5,7,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="29" yLocal="1.1131583511187035" y="1.1131583511187035"/>
+      <pt constSeg="false" x="26" yLocal="1.1210597530458803" y="1.1210597530458803"/>
+      <pt constSeg="false" x="20" yLocal="1.132713961992758" y="1.132713961992758"/>
+      <pt constSeg="false" x="23" yLocal="1.2009335925193674" y="1.2009335925193674"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE227D" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-19.873705262890365" y="-19.873705262890365"/>
+      <pt constSeg="false" x="26" yLocal="-1.7704856133930249" y="-1.7704856133930249"/>
+      <pt constSeg="false" x="17" yLocal="-0.72130826521062574" y="-0.72130826521062574"/>
+      <pt constSeg="false" x="2,5,7,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="20" yLocal="4.9725855855926477" y="4.9725855855926477"/>
+      <pt constSeg="false" x="31" yLocal="5.2771784310825227" y="5.2771784310825227"/>
+      <pt constSeg="false" x="30" yLocal="7.9157676450693462" y="7.9157676450693462"/>
+      <pt constSeg="false" x="23" yLocal="12.880112097139603" y="12.880112097139603"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE227E" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.10831948621628906" y="-0.10831948621628906"/>
+      <pt constSeg="false" x="5" yLocal="-0.063157742180404985" y="-0.063157742180404985"/>
+      <pt constSeg="false" x="2,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="0.88556689369482977" y="0.88556689369482977"/>
+      <pt constSeg="false" x="20" yLocal="0.88556689369483044" y="0.88556689369483044"/>
+      <pt constSeg="false" x="31" yLocal="0.916466513200481" y="0.916466513200481"/>
+      <pt constSeg="false" x="29" yLocal="1.4224077022282915" y="1.4224077022282915"/>
+      <pt constSeg="false" x="23" yLocal="1.8311230409914727" y="1.8311230409914727"/>
+      <pt constSeg="false" x="30" yLocal="2.1486552847526355" y="2.1486552847526355"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE227F" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="-2.5101304325191762" y="-2.5101304325191762"/>
+      <pt constSeg="false" x="31" yLocal="-1.5847106800403898" y="-1.5847106800403898"/>
+      <pt constSeg="false" x="5" yLocal="-1.3389441342246498" y="-1.3389441342246498"/>
+      <pt constSeg="false" x="29" yLocal="-1.2241629009242216" y="-1.2241629009242216"/>
+      <pt constSeg="false" x="17" yLocal="-0.61678889164258321" y="-0.61678889164258321"/>
+      <pt constSeg="false" x="2,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="1.3284853393809797" y="1.3284853393809797"/>
+      <pt constSeg="false" x="20" yLocal="1.5427993652953484" y="1.5427993652953484"/>
+      <pt constSeg="false" x="23" yLocal="2.0949107479703351" y="2.0949107479703351"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2280" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2281" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="-15.38593977917723" y="-15.38593977917723"/>
+      <pt constSeg="false" x="29" yLocal="-13.507039318773066" y="-13.507039318773066"/>
+      <pt constSeg="false" x="26" yLocal="-6.7948969693383701" y="-6.7948969693383701"/>
+      <pt constSeg="false" x="31" yLocal="-6.7535196593865328" y="-6.7535196593865328"/>
+      <pt constSeg="false" x="2,5,14,17,20,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="23" yLocal="8.5634836619429802" y="8.5634836619429802"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2282" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="23" yLocal="0.9326574770603947" y="0.9326574770603947"/>
+      <pt constSeg="false" x="2,5,14,17,20,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="26" yLocal="1.0070736350801475" y="1.0070736350801475"/>
+      <pt constSeg="false" x="31" yLocal="1.0142227681798448" y="1.0142227681798448"/>
+      <pt constSeg="false" x="30" yLocal="1.0213341522697665" y="1.0213341522697665"/>
+      <pt constSeg="false" x="29" yLocal="1.0284455363596898" y="1.0284455363596898"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2283" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="0.94905196795202629" y="0.94905196795202629"/>
+      <pt constSeg="false" x="2,5,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="31" yLocal="1.0546101469378706" y="1.0546101469378706"/>
+      <pt constSeg="false" x="30" yLocal="1.0819152204068083" y="1.0819152204068083"/>
+      <pt constSeg="false" x="29" yLocal="1.1092202938757414" y="1.1092202938757414"/>
+      <pt constSeg="false" x="26" yLocal="1.1210597530458803" y="1.1210597530458803"/>
+      <pt constSeg="false" x="20" yLocal="1.132713961992758" y="1.132713961992758"/>
+      <pt constSeg="false" x="23" yLocal="1.2009335925193718" y="1.2009335925193718"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2284" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-8.4288589000752623" y="-8.4288589000752623"/>
+      <pt constSeg="false" x="30" yLocal="-6.3216441750564396" y="-6.3216441750564396"/>
+      <pt constSeg="false" x="31" yLocal="-4.2144294500376311" y="-4.2144294500376311"/>
+      <pt constSeg="false" x="26" yLocal="-1.7704856133930249" y="-1.7704856133930249"/>
+      <pt constSeg="false" x="17" yLocal="-0.72130826521062574" y="-0.72130826521062574"/>
+      <pt constSeg="false" x="2,5,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="20" yLocal="4.9725855855926477" y="4.9725855855926477"/>
+      <pt constSeg="false" x="23" yLocal="12.880112097139842" y="12.880112097139842"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2285" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="5" yLocal="-0.063157742180405596" y="-0.063157742180405596"/>
+      <pt constSeg="false" x="17" yLocal="-0.058404237082149035" y="-0.058404237082149035"/>
+      <pt constSeg="false" x="9" yLocal="-9.9920072216264089e-16" y="-9.9920072216264089e-16"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="-2.8548592054674123e-16" y="-2.8548592054674123e-16"/>
+      <pt constSeg="false" x="33" yLocal="0.30056201704133806" y="0.30056201704133806"/>
+      <pt constSeg="false" x="20" yLocal="0.47537129131290484" y="0.47537129131290484"/>
+      <pt constSeg="false" x="26" yLocal="0.47537129131291034" y="0.47537129131291034"/>
+      <pt constSeg="false" x="31" yLocal="0.60112403408267157" y="0.60112403408267157"/>
+      <pt constSeg="false" x="29" yLocal="0.63326564676392172" y="0.63326564676392172"/>
+      <pt constSeg="false" x="30" yLocal="1.330845582199899" y="1.330845582199899"/>
+      <pt constSeg="false" x="28" yLocal="1.3469481448421678" y="1.3469481448421678"/>
+      <pt constSeg="false" x="23" yLocal="1.9736960431201975" y="1.9736960431201975"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2286" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="28" yLocal="-2.0140370669277918" y="-2.0140370669277918"/>
+      <pt constSeg="false" x="23" yLocal="-1.5020642251929421" y="-1.5020642251929421"/>
+      <pt constSeg="false" x="5" yLocal="-1.3389441342246484" y="-1.3389441342246484"/>
+      <pt constSeg="false" x="31" yLocal="-0.64514608396149908" y="-0.64514608396149908"/>
+      <pt constSeg="false" x="17" yLocal="-0.33256328953769332" y="-0.33256328953769332"/>
+      <pt constSeg="false" x="33" yLocal="-0.32257304198074754" y="-0.32257304198074754"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="5.7097184109348245e-16" y="5.7097184109348245e-16"/>
+      <pt constSeg="false" x="9" yLocal="1.9984014443252818e-15" y="1.9984014443252818e-15"/>
+      <pt constSeg="false" x="29" yLocal="0.030173200140084733" y="0.030173200140084733"/>
+      <pt constSeg="false" x="30" yLocal="0.38582687271869043" y="0.38582687271869043"/>
+      <pt constSeg="false" x="20" yLocal="0.82726280956427978" y="0.82726280956427978"/>
+      <pt constSeg="false" x="26" yLocal="1.2642615571165448" y="1.2642615571165448"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2287" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,9,12,14,17,20,23,26,28-31,33,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2288" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="9" yLocal="-20.157061629459857" y="-20.157061629459857"/>
+      <pt constSeg="false" x="17" yLocal="-19.224511713754399" y="-19.224511713754399"/>
+      <pt constSeg="false" x="5" yLocal="-11.929689534796756" y="-11.929689534796756"/>
+      <pt constSeg="false" x="28" yLocal="-9.0138474799981232" y="-9.0138474799981232"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="-5.7591604641245118" y="-5.7591604641245118"/>
+      <pt constSeg="false" x="29" yLocal="-4.6405154719143393" y="-4.6405154719143393"/>
+      <pt constSeg="false" x="20" yLocal="1.1676899718387312" y="1.1676899718387312"/>
+      <pt constSeg="false" x="23" yLocal="20.632850753931063" y="20.632850753931063"/>
+      <pt constSeg="false" x="26" yLocal="26.778611079500777" y="26.778611079500777"/>
+      <pt constSeg="false" x="33" yLocal="41.362166915333852" y="41.362166915333852"/>
+      <pt constSeg="false" x="30" yLocal="43.842996896950815" y="43.842996896950815"/>
+      <pt constSeg="false" x="31" yLocal="47.818865974848173" y="47.818865974848173"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2289" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="33" yLocal="0.77993801889697301" y="0.77993801889697301"/>
+      <pt constSeg="false" x="23" yLocal="0.928021396348085" y="0.928021396348085"/>
+      <pt constSeg="false" x="31" yLocal="0.94935160085069503" y="0.94935160085069503"/>
+      <pt constSeg="false" x="20" yLocal="0.95603661329319511" y="0.95603661329319511"/>
+      <pt constSeg="false" x="29" yLocal="0.96235025576142263" y="0.96235025576142263"/>
+      <pt constSeg="false" x="28" yLocal="0.99380044997379191" y="0.99380044997379191"/>
+      <pt constSeg="false" x="9" yLocal="0.99999999999999878" y="0.99999999999999878"/>
+      <pt constSeg="false" x="5" yLocal="0.99999999999999922" y="0.99999999999999922"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0.99999999999999967" y="0.99999999999999967"/>
+      <pt constSeg="false" x="17" yLocal="1.0549818216099576" y="1.0549818216099576"/>
+      <pt constSeg="false" x="26" yLocal="1.0567008384355892" y="1.0567008384355892"/>
+      <pt constSeg="false" x="30" yLocal="1.3240788081898323" y="1.3240788081898323"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE228A" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="0.65409506472831036" y="0.65409506472831036"/>
+      <pt constSeg="false" x="31" yLocal="0.91726461353366762" y="0.91726461353366762"/>
+      <pt constSeg="false" x="17" yLocal="0.92603046051297744" y="0.92603046051297744"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="1.0000000000000002" y="1.0000000000000002"/>
+      <pt constSeg="false" x="5" yLocal="1.0000000000000004" y="1.0000000000000004"/>
+      <pt constSeg="false" x="9" yLocal="1.0000000000000009" y="1.0000000000000009"/>
+      <pt constSeg="false" x="29" yLocal="1.2004000350222919" y="1.2004000350222919"/>
+      <pt constSeg="false" x="20" yLocal="1.2005849766207053" y="1.2005849766207053"/>
+      <pt constSeg="false" x="28" yLocal="1.2134259961205798" y="1.2134259961205798"/>
+      <pt constSeg="false" x="33" yLocal="1.2196779862621281" y="1.2196779862621281"/>
+      <pt constSeg="false" x="26" yLocal="1.2394779183325162" y="1.2394779183325162"/>
+      <pt constSeg="false" x="23" yLocal="1.2850809042854583" y="1.2850809042854583"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE228B" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-13.742918987118014" y="-13.742918987118014"/>
+      <pt constSeg="false" x="33" yLocal="-13.39782552681295" y="-13.39782552681295"/>
+      <pt constSeg="false" x="29" yLocal="-12.355163144462907" y="-12.355163144462907"/>
+      <pt constSeg="false" x="9" yLocal="-2.2263882770244598e-14" y="-2.2263882770244598e-14"/>
+      <pt constSeg="false" x="5" yLocal="-1.3176583679237678e-14" y="-1.3176583679237678e-14"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="-6.3611093613415478e-15" y="-6.3611093613415478e-15"/>
+      <pt constSeg="false" x="28" yLocal="1.9320280086091108" y="1.9320280086091108"/>
+      <pt constSeg="false" x="20" yLocal="10.536198129802674" y="10.536198129802674"/>
+      <pt constSeg="false" x="30" yLocal="13.030784140792823" y="13.030784140792823"/>
+      <pt constSeg="false" x="31" yLocal="15.892666779564452" y="15.892666779564452"/>
+      <pt constSeg="false" x="23" yLocal="23.942483704207625" y="23.942483704207625"/>
+      <pt constSeg="false" x="26" yLocal="30.506410331586896" y="30.506410331586896"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE228C" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.10831948621628906" y="-0.10831948621628906"/>
+      <pt constSeg="false" x="31" yLocal="-0.078279248585981343" y="-0.078279248585981343"/>
+      <pt constSeg="false" x="5" yLocal="-0.063157742180404985" y="-0.063157742180404985"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="29" yLocal="0.23521185440172643" y="0.23521185440172643"/>
+      <pt constSeg="false" x="30" yLocal="0.32132380234101471" y="0.32132380234101471"/>
+      <pt constSeg="false" x="26" yLocal="0.88556689369481778" y="0.88556689369481778"/>
+      <pt constSeg="false" x="20" yLocal="0.88556689369483044" y="0.88556689369483044"/>
+      <pt constSeg="false" x="23" yLocal="1.8311230409914496" y="1.8311230409914496"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE228D" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="-5.5911169045666309" y="-5.5911169045666309"/>
+      <pt constSeg="false" x="30" yLocal="-5.2091932583057199" y="-5.2091932583057199"/>
+      <pt constSeg="false" x="31" yLocal="-4.156883916982089" y="-4.156883916982089"/>
+      <pt constSeg="false" x="5" yLocal="-1.3389441342246484" y="-1.3389441342246484"/>
+      <pt constSeg="false" x="17" yLocal="-0.61678889164258321" y="-0.61678889164258321"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="26" yLocal="1.3284853393809808" y="1.3284853393809808"/>
+      <pt constSeg="false" x="20" yLocal="1.5427993652953484" y="1.5427993652953484"/>
+      <pt constSeg="false" x="23" yLocal="2.2073366965655543" y="2.2073366965655543"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE228E" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,5,12,14,17,20,23,26,29-31,35" yLocal="0" y="0"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE228F" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="2,12,14,17,20,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="30" yLocal="8.6441565653166528" y="8.6441565653166528"/>
+      <pt constSeg="false" x="31" yLocal="9.2665445720957624" y="9.2665445720957624"/>
+      <pt constSeg="false" x="29" yLocal="13.899816855414082" y="13.899816855414082"/>
+      <pt constSeg="false" x="5" yLocal="16.522460518289446" y="16.522460518289446"/>
+      <pt constSeg="false" x="26" yLocal="28.767822072908398" y="28.767822072908398"/>
+      <pt constSeg="false" x="23" yLocal="44.412781500312889" y="44.412781500312889"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2290" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="29" yLocal="0.96040748127807396" y="0.96040748127807396"/>
+      <pt constSeg="false" x="30" yLocal="0.96040748127807407" y="0.96040748127807407"/>
+      <pt constSeg="false" x="31" yLocal="0.97360498751353275" y="0.97360498751353275"/>
+      <pt constSeg="false" x="2,12,14,17,20,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="5" yLocal="1.043070112782273" y="1.043070112782273"/>
+      <pt constSeg="false" x="26" yLocal="1.1408009633480503" y="1.1408009633480503"/>
+      <pt constSeg="false" x="23" yLocal="1.2888226557854277" y="1.2888226557854277"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2291" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="30" yLocal="0.6369629037494472" y="0.6369629037494472"/>
+      <pt constSeg="false" x="29" yLocal="0.63696290374944764" y="0.63696290374944764"/>
+      <pt constSeg="false" x="31" yLocal="0.75797526911877111" y="0.75797526911877111"/>
+      <pt constSeg="false" x="17" yLocal="0.94905196795202629" y="0.94905196795202629"/>
+      <pt constSeg="false" x="5" yLocal="0.99999999999999856" y="0.99999999999999856"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="1" y="1"/>
+      <pt constSeg="false" x="20" yLocal="1.132713961992758" y="1.132713961992758"/>
+      <pt constSeg="false" x="26" yLocal="1.1864248422225427" y="1.1864248422225427"/>
+      <pt constSeg="false" x="23" yLocal="1.2756987877616683" y="1.2756987877616683"/>
+     </points>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE2292" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+     <points version="2">
+      <pt constSeg="false" x="17" yLocal="-0.72130826521062574" y="-0.72130826521062574"/>
+      <pt constSeg="false" x="2,12,14,35" yLocal="0" y="0"/>
+      <pt constSeg="false" x="31" yLocal="4.0319642485341323" y="4.0319642485341323"/>
+      <pt constSeg="false" x="20" yLocal="4.9725855855926477" y="4.9725855855926477"/>
+      <pt constSeg="false" x="29" yLocal="6.0479463716135395" y="6.0479463716135395"/>
+      <pt constSeg="false" x="30" yLocal="6.0479463716135546" y="6.0479463716135546"/>
+      <pt constSeg="false" x="5" yLocal="16.522460518289414" y="16.522460518289414"/>
+      <pt constSeg="false" x="26" yLocal="33.514763892510999" y="33.514763892510999"/>
+      <pt constSeg="false" x="23" yLocal="48.47587671568072" y="48.47587671568072"/>
+     </points>
+    </column>
+    <column type="2" name="ATV-0BAF85CDF0EE4A9D" anonymous="true" displayOrder="0">
+     <infoX width="100"/>
+     <infoY width="100"/>
+     <infoZ width="100"/>
+     <infoVelocity width="100"/>
+     <path3D useVeloX="true" useVeloY="true" useVeloZ="true" constantZ="false">
+      <points/>
+     </path3D>
+     <velocity type="3" name="ATV-0BAF85CDF0EE4A9E" displayOrder="0" width="100" anonymous="true">
+      <step val="1" start="1" stop="1"/>
+     </velocity>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE4A9F" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE4AA0" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE4AA1" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+    </column>
+    <column type="3" name="ATV-0BAF85CDF0EE4AA2" displayOrder="0" width="100" anonymous="true">
+     <step val="1" start="1" stop="1"/>
+    </column>
+   </columns>
+   <options>
+    <defaultDisplay val="Display"/>
+   </options>
+   <rootgroup name="Top">
+    <options>
+     <collapsed val="false"/>
+    </options>
+    <nodeslist>
+     <module type="COMPOSITE" name="Composite" pos="-75,-11,11" publishUnderTab="Composite">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <compositeMode val="compositeBitmap"/>
+       <flattenOutput val="true"/>
+       <flattenVector val="false"/>
+       <composite2d val="false"/>
+       <composite3d val="false"/>
+       <outputZ val="LEFTMOST"/>
+       <outputZInputPort val="1"/>
+       <applyFocus val="true"/>
+       <multiplier val="1" defaultValue="1"/>
+       <tvgPalette val="compositedPalette"/>
+       <mergeVector val="false"/>
+      </attrs>
+     </module>
+     <module type="DISPLAY" name="Display" pos="50,50,12" publishUnderTab="Display">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+     </module>
+     <module type="WRITE" name="Write" pos="-50,50,13" publishUnderTab="Write">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <exportToMovie val="false"/>
+       <drawingName val="frames/final-"/>
+       <moviePath val="frames/output"/>
+       <movieFormat val="com.toonboom.quicktime.legacy"/>
+       <movieAudio/>
+       <movieVideo/>
+       <movieVideoaudio/>
+       <leadingZeros val="3"/>
+       <start val="1"/>
+       <drawingType val="TGA"/>
+       <enabling>
+        <filter val="ALWAYS"/>
+        <filterName/>
+        <filterResX val="720"/>
+        <filterResY val="540"/>
+       </enabling>
+       <scriptMovie val="false"/>
+       <scriptEditor val="// Following code will be called at the end of Write Node rendering
+// operations to create a movie file from rendered images.
+
+// ..."/>
+       <colorSpace/>
+       <compositePartitioning val="NoCompositePartitioning"/>
+       <zPartitionRange val="1" defaultValue="1"/>
+       <cleanUpPartitionFolders val="true"/>
+      </attrs>
+     </module>
+     <module type="READ" name="LegA" pos="-456,-72,4" publishUnderTab="LegA">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2254"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2255"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2256"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2258"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2259"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2257"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2257"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE225A"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1D4B">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Hands" pos="-384,-103,6" publishUnderTab="Hands">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE225B"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE225C"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE225D"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE225F"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2260"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE225E"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE225E"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2261"/>
+       <pivot>
+        <x val="-2.2999944444031795" defaultValue="0"/>
+        <y val="-3.2084133027647175" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1C01">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Gun" pos="-299,-134,5" publishUnderTab="Gun">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2262"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2263"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2264"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2266"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2267"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2265"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2265"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2268"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1CA6">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Ears" pos="-228,-165,7" publishUnderTab="Ears">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2269"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE226A"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE226B"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE226D"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE226E"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE226C"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE226C"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE226F"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1B5C">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Eyes" pos="-155,-196,8" publishUnderTab="Eyes">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2270"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2271"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2272"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2274"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2275"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2273"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2273"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2276"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1AB7">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Head" pos="-81,-227,9" publishUnderTab="Head">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2277"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2278"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2279"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE227B"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE227C"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE227A"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE227A"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE227D"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1A12">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="PEG" name="Body-P" pos="-49,-288,1" publishUnderTab="Body-P">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <position>
+        <separate val="false"/>
+        <attr3dpath col="ATV-0BAF85CDF0EE4A9D"/>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </position>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE4AA0"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE4AA1"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE4A9F"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE4A9F"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE4AA2"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <groupAtNetworkBuilding val="false"/>
+       <addCompositeToGroup val="true"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Tail" pos="73,-165,2" publishUnderTab="Tail">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2285"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2286"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2287"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2289"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE228A"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2288"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2288"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE228B"/>
+       <pivot>
+        <x val="-3.6894647723721516" defaultValue="0"/>
+        <y val="-5.5705128603119665" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EDCB2D">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="LegB" pos="138,-134,3" publishUnderTab="LegB">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE228C"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE228D"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE228E"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2290"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2291"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE228F"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE228F"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2292"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1DF0">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+     <module type="READ" name="Body" pos="-4,-196,10" publishUnderTab="Body">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <offset>
+        <separate val="true"/>
+        <x val="0" defaultValue="0" col="ATV-0BAF85CDF0EE227E"/>
+        <y val="0" defaultValue="0" col="ATV-0BAF85CDF0EE227F"/>
+        <z val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2280"/>
+       </offset>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2282"/>
+        <y val="1" defaultValue="1" col="ATV-0BAF85CDF0EE2283"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2281"/>
+       </rotation>
+       <angle val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2281"/>
+       <skew val="0" defaultValue="0" col="ATV-0BAF85CDF0EE2284"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <drawing>
+        <elementMode val="true"/>
+        <element col="ATV-0BAF85CDF0EC1944">
+         <layer/>
+        </element>
+        <customName>
+         <name/>
+         <extension val="tga"/>
+         <fieldChart val="12" defaultValue="12"/>
+        </customName>
+       </drawing>
+       <readOverlay val="true"/>
+       <readLineArt val="true"/>
+       <readColorArt val="true"/>
+       <readUnderlay val="true"/>
+       <overlayArtDrawingMode val="VectorDrawingMode"/>
+       <lineArtDrawingMode val="VectorDrawingMode"/>
+       <colorArtDrawingMode val="VectorDrawingMode"/>
+       <underlayArtDrawingMode val="VectorDrawingMode"/>
+       <pencilLineDeformationPreserveThickness val="false"/>
+       <pencilLineDeformationQuality val="Low"/>
+       <pencilLineDeformationSmooth val="1"/>
+       <pencilLineDeformationFitError val="3" defaultValue="3"/>
+       <readColor val="true"/>
+       <readTransparency val="true"/>
+       <colorTransformation val="Linear"/>
+       <colorSpace val="sRGB"/>
+       <applyMatteToColor val="N"/>
+       <enableLineTexture val="true"/>
+       <antialiasingQuality val="HIGH"/>
+       <antialiasingExponent val="1" defaultValue="1"/>
+       <opacity val="100" defaultValue="100"/>
+       <textureFilter val="NEAREST_FILTERED"/>
+       <adjustPencilThickness val="false"/>
+       <normalLineArtThickness val="true"/>
+       <zoomIndependentLineArtThickness val="zoomIndependent"/>
+       <multLineArtThickness val="1" defaultValue="1"/>
+       <addLineArtThickness val="0" defaultValue="0"/>
+       <minLineArtThickness val="0" defaultValue="0"/>
+       <maxLineArtThickness val="0" defaultValue="0"/>
+       <useDrawingPivot val="APPLY_ON_READ_TRANSFORM"/>
+       <flipHor val="false"/>
+       <flipVert val="false"/>
+       <turnBeforeAlignment val="false"/>
+       <noClipping val="false"/>
+       <xClipFactor val="0"/>
+       <yClipFactor val="0"/>
+       <alignmentRule val="CENTER_FIRST_PAGE"/>
+       <morphingVelo val="0" defaultValue="0"/>
+       <canAnimate val="true"/>
+       <tileHorizontal val="false"/>
+       <tileVertical val="false"/>
+      </attrs>
+     </module>
+    </nodeslist>
+    <linkedlist>
+     <link out="Composite" in="Display"/>
+     <link out="Composite" in="Write"/>
+     <link out="LegA" in="Composite" inport="8"/>
+     <link out="Hands" in="Composite" inport="7"/>
+     <link out="Gun" in="Composite" inport="6"/>
+     <link out="Ears" in="Composite" inport="5"/>
+     <link out="Eyes" in="Composite" inport="4"/>
+     <link out="Head" in="Composite" inport="3"/>
+     <link out="Body-P" in="LegA" inport="0"/>
+     <link out="Body-P" in="Hands" inport="0"/>
+     <link out="Body-P" in="Gun" inport="0"/>
+     <link out="Body-P" in="Ears" inport="0"/>
+     <link out="Body-P" in="Eyes" inport="0"/>
+     <link out="Body-P" in="Head" inport="0"/>
+     <link out="Body-P" in="Body" inport="0"/>
+     <link out="Body-P" in="Tail" inport="0"/>
+     <link out="Body-P" in="LegB" inport="0"/>
+     <link out="Tail" in="Composite" inport="1"/>
+     <link out="LegB" in="Composite" inport="0"/>
+     <link out="Body" in="Composite" inport="2"/>
+    </linkedlist>
+   </rootgroup>
+   <unconnectedComposite>
+    <module type="COMPOSITE" name="Unconnected_Composite" pos="0,0,0" publishUnderTab="Unconnected_Composite">
+     <options>
+      <collapsed val="false"/>
+      <version val="1"/>
+     </options>
+     <attrs>
+      <compositeMode val="compositeBitmap"/>
+      <flattenOutput val="true"/>
+      <flattenVector val="false"/>
+      <composite2d val="false"/>
+      <composite3d val="false"/>
+      <outputZ val="LEFTMOST"/>
+      <outputZInputPort val="1"/>
+      <applyFocus val="true"/>
+      <multiplier val="1" defaultValue="1"/>
+      <tvgPalette val="compositedPalette"/>
+      <mergeVector val="false"/>
+     </attrs>
+    </module>
+   </unconnectedComposite>
+   <metas>
+    <meta type="guideList" name="guideList" creator="Harmony Premium" version="1.0">
+     <guideList selectedGuide="-1"/>
+    </meta>
+    <meta type="alignmentGuideList" name="alignmentGuideList" creator="Harmony Premium" version="1.0">
+     <alignmentGuideList selectedGuide="-1"/>
+    </meta>
+   </metas>
+   <timelineOrderer/>
+  </scene>
+ </scenes>
+ <symbols>
+  <folder name="Symbols">
+   <scene id="0baf85cdf0e64a0e"/>
+  </folder>
+ </symbols>
+ <timeline>
+  <scene id="0baf85cdf0e64a0e"/>
+ </timeline>
+ <metas>
+  <meta type="int" name="projectStartTime" creator="Harmony Premium" version="1.0">
+   <int value=""/>
+  </meta>
+ </metas>
+</project>

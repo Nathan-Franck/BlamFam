@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VeggieBaddies Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 0
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 0
+      blockOffset: 0
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -8585968017494354324, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: -5683637441461726431, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: 7463714418275816416, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: 3643570837507907847, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: -7407137739063395676, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: -3386368656167443273, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: 331496152573747663, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: -1837023695472285800, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: 3256916205146195356, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: -3262099998065452879, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: 8900308061431737552, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    - {fileID: 7642723558613829031, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_RenderDataMap: {}
+  m_Tag: VeggieBaddies Atlas
+  m_IsVariant: 0

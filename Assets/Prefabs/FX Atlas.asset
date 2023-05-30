@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 0
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 0
+      blockOffset: 0
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -6668370843831343884, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -5288812091536820524, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 1865716422017643414, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -2676292992587619481, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -6343629917868929224, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 7301491733877658755, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 6556609621569565761, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 2787675226854598101, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 5703726947472693993, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 8224296277534897279, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -211441666039405321, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 2081376855161147537, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -682696927252447284, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 6474320755691838831, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -7728656875659900249, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -728879801259798474, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -3076301714397406858, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 557360029775050315, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -5791799637396910145, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -5497636849792935564, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -1039614650464993420, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -7219470600444160872, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 715052573394014015, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -3769002258444645525, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 791968619981537826, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: 9037003411615434033, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -5609177456813867382, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    - {fileID: -3130811029893530025, guid: bad80ae08476e7d45aac73ca3f75a297, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_RenderDataMap: {}
+  m_Tag: FX Atlas
+  m_IsVariant: 0
