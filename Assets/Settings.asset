@@ -127,7 +127,7 @@ MonoBehaviour:
   - {r: 0.4764151, g: 0.6200356, b: 1, a: 1}
   - {r: 1, g: 0.989954, b: 0, a: 1}
   - {r: 0.9567672, g: 0.5424528, b: 1, a: 1}
-  baddieSpawnRate: 1
+  baddieSpawnRate: 2
   baddieSpeed: 2
   baddieRadius: 1
   baddieHealth: 4

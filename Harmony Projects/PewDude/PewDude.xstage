@@ -108,9 +108,9 @@
      <elementSeq exposures="2-11,12-47,48,51-74,76-79,80-91,92-93,94-95" val="1" id="10"/>
     </column>
     <column type="0" name="ATV-0BAF85CDF0EDCB2D" displayOrder="0" width="100" anonymous="true" id="11">
-     <elementSeq exposures="2-11,12-22,29-35,51-61,68-74,94-95" val="1" id="11"/>
+     <elementSeq exposures="2-11,12-22,29-35,44-48,51-61,68-74,94-95" val="1" id="11"/>
      <elementSeq exposures="23-28,62-67,76-83,84-91,92-93" val="2" id="11"/>
-     <elementSeq exposures="36-47,48" val="3" id="11"/>
+     <elementSeq exposures="36-43" val="3" id="11"/>
     </column>
     <column type="3" name="ATV-0BAF85CDF0EE2254" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
@@ -1536,7 +1536,7 @@
      <path3D useVeloX="true" useVeloY="true" useVeloZ="true" constantZ="false">
       <points/>
      </path3D>
-     <velocity type="3" name="ATV-0BB2C2F279401309" displayOrder="0" width="100" anonymous="true">
+     <velocity type="3" name="ATV-0BB2D319A54011C9" displayOrder="0" width="100" anonymous="true">
       <step val="1" start="1" stop="1"/>
       <noFrames/>
      </velocity>
