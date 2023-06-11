@@ -5,6 +5,7 @@ Shader "Harmony/TBGSprite"
         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
         _CutterTex ("Sprite Texture", 2D) = "black" {}
         _Color ("Tint", Color) = (1,1,1,1)
+        _Flash ("Flash", Color) = (0,0,0,0)
         [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
         [HideInInspector] _RendererColor ("RendererColor", Color) = (1,1,1,1)
         [HideInInspector] _Flip ("Flip", Vector) = (1,1,1,1)
@@ -79,6 +80,7 @@ Shader "Harmony/TBGSprite"
             float4 _CutterRect;
             sampler2D _CutterTex;
             int _CutterInverse;
+            float4 _Flash;
 
             fixed4 SpriteFragHarmony(harmony_v2f IN) : SV_Target
             {
@@ -90,6 +92,7 @@ Shader "Harmony/TBGSprite"
                 float cutterAlpha = tex2D(_CutterTex, cutterCoord).a;
                 c.a *= cutterAlpha * _CutterInverse
                     + (1 - cutterAlpha) * (1 - _CutterInverse);
+                c.rgb = lerp(c.rgb, _Flash.rgb, _Flash.a);
                 c.rgb *= c.a;
                 return c;
             }

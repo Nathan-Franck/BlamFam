@@ -15,6 +15,76 @@ MonoBehaviour:
   dudePrefab: {fileID: 5754355860299018482, guid: dd393ac68b2ca884a936310d8881b308, type: 3}
   veggieBaddyPrefab: {fileID: -7012332513657273500, guid: 92a35163664df124ea31ec5f6d4ad91a, type: 3}
   fxPrefab: {fileID: 7456110486677839407, guid: bfe7ab71be5a8394bad6cde437e57314, type: 3}
+  hitFlashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.009004325
+      value: 1.005415
+      inSlope: 0
+      outSlope: Infinity
+      tangentMode: 97
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.0438912
+      value: 0.007293701
+      inSlope: 6.1320753
+      outSlope: Infinity
+      tangentMode: 97
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.049617473
+    - serializedVersion: 3
+      time: 0.075760365
+      value: 1.0062423
+      inSlope: 0.0225226
+      outSlope: Infinity
+      tangentMode: 97
+      weightedMode: 0
+      inWeight: 0.38805115
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.10846771
+      value: 0.007511139
+      inSlope: -6.2261558
+      outSlope: Infinity
+      tangentMode: 97
+      weightedMode: 0
+      inWeight: 0.04234795
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.10858697
+      value: 0.007511139
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.14622855
+      value: 1.0042763
+      inSlope: Infinity
+      outSlope: Infinity
+      tangentMode: 103
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.1835032
+      value: 0.000013436424
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dudeRadius: 0.1
   speed: 6
   jumpSpeedMultiplier: 2
   landingSpeedMultiplier: 0.5

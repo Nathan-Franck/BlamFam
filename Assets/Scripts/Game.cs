@@ -14,6 +14,7 @@ public class Game : MonoBehaviour
         public Vector2 position;
         public Vector2 velocity;
         public float lastFireTime;
+        public float lastHitTime;
     }
 
     public class BulletState
@@ -34,6 +35,7 @@ public class Game : MonoBehaviour
 
     public class DeadBaddieState
     {
+        public float deathTime;
         public GameObject instance;
         public Vector2 position;
         public Vector2 velocity;
@@ -134,23 +136,32 @@ public class Game : MonoBehaviour
                 }
             }
 
+            float baddieMoveScale;
             // ensure baddie scale conforms to radius by getting renderer bounds and rescaling
             {
                 var baddieScale = settings.baddieRadius / Mathf.Max(totalBounds.extents.x, totalBounds.extents.y);
-                instance.transform.localScale = Vector3.one * baddieScale;
+                var scale = Random.Range(0.5f, 2.0f);
+                instance.transform.localScale = Vector3.one * baddieScale * scale;
+                baddieMoveScale = 1 / scale;
             }
 
             // set a random skin on the tbg renderer
             {
                 var renderer = instance.GetComponent<TBGRenderer>();
-                renderer.GroupToSkinID[0] = (ushort)(Random.Range(0, 4) + 1);
+                renderer.GroupToSkinID[0] = (ushort)(Random.Range(0, 1) + 4 + 1);
+            }
+
+            // set a random time offset on the animator
+            {
+                var animator = instance.GetComponent<Animator>();
+                animator.Play(animator.GetCurrentAnimatorStateInfo(0).fullPathHash, 0, Random.Range(0f, 1f));
             }
 
             var baddie = new BaddieState
             {
                 instance = instance,
                 position = new Vector2(cameraBounds.xMax, Random.Range(cameraBounds.yMin + settings.baddieRadius, cameraBounds.yMax - settings.baddieRadius)),
-                velocity = Vector2.left * settings.baddieSpeed,
+                velocity = Vector2.left * settings.baddieSpeed * baddieMoveScale,
                 health = settings.baddieHealth,
             };
             baddies.Add(baddie);
@@ -160,7 +171,11 @@ public class Game : MonoBehaviour
         foreach (var baddie in baddies)
         {
             baddie.position += Time.deltaTime * baddie.velocity;
-            baddie.instance.transform.position = baddie.position;
+
+            // Compose position - z is based on y
+            Vector3 position = baddie.position;
+            position.z = position.y;
+            baddie.instance.transform.position = position;
 
             // Once baddie exits camera bounds, destroy it
             if (!cameraBounds.Contains(baddie.position))
@@ -170,7 +185,7 @@ public class Game : MonoBehaviour
         }
 
         // Move dead baddies
-        foreach(var deadBaddie in deadBaddies)
+        foreach (var deadBaddie in deadBaddies)
         {
             // Once dead baddie exits camera bounds, destroy it
             if (deadBaddie.instance == null || !cameraBounds.Contains(deadBaddie.position))
@@ -190,6 +205,9 @@ public class Game : MonoBehaviour
             // Change velocity based on angular velocity (ping pong ball physics)
             var velocityTangent = new Vector2(-deadBaddie.velocity.y, deadBaddie.velocity.x);
             deadBaddie.velocity += Time.deltaTime * deadBaddie.angularVelocity * velocityTangent * settings.deadBaddieSpin;
+
+            // Flash white after hit
+            FlashAllSprites(deadBaddie.instance, Color.Lerp(Color.clear, Color.white, settings.hitFlashCurve.Evaluate(Time.time - deadBaddie.deathTime)));
         }
 
 
@@ -269,15 +287,42 @@ public class Game : MonoBehaviour
                 dude.position += Time.deltaTime * dude.velocity * settings.jumpSpeedMultiplier;
             }
 
+            if (grounded)
+            {
+                // Check all baddies for collision, if they hit, play the "Body-P_hit" state
+                foreach (var baddie in baddies)
+                {
+                    if (Vector2.Distance(baddie.position, dude.position) < settings.baddieRadius + settings.dudeRadius)
+                    {
+                        // Play hit animation
+                        var animator = dude.instance.GetComponent<Animator>();
+                        animator.Play("Body-P_hit", 0, 0f);
+
+                        // Destroy baddie
+                        baddiesToDestroy.Add(baddie);
+
+                        // Set hit time on dude
+                        dude.lastHitTime = Time.time;
+                        break;
+                    }
+                }
+            }
+
             // Visuals
             {
-                dude.instance.transform.position = dude.position;
+                // compose position - z is based on y
+                Vector3 position = dude.position;
+                position.z = dude.position.y;
+                dude.instance.transform.position = position;
 
                 // Offset position upwards based on jump curve
                 if (airborne)
                 {
                     dude.instance.transform.position += Vector3.up * settings.jumpCurve.Evaluate(currentState.normalizedTime);
                 }
+
+                // Flash white after hit
+                FlashAllSprites(dude.instance.gameObject, Color.Lerp(Color.clear, Color.white, settings.hitFlashCurve.Evaluate(Time.time - dude.lastHitTime)));
             }
             i++;
         }
@@ -312,6 +357,7 @@ public class Game : MonoBehaviour
                         var collisionForce = Vector2.Dot(bullet.velocity, collisionNormal);
                         var deadBaddie = new DeadBaddieState
                         {
+                            deathTime = Time.time,
                             instance = baddie.instance,
                             position = baddie.position,
                             velocity = baddie.velocity + collisionNormal * collisionForce / settings.deadBaddieMass,
@@ -339,13 +385,13 @@ public class Game : MonoBehaviour
                 }
             }
         }
-        
+
         foreach (var baddie in baddiesToDestroy)
         {
             Destroy(baddie.instance);
             baddies.Remove(baddie);
         }
-        foreach(var baddie in baddiesToRemove)
+        foreach (var baddie in baddiesToRemove)
         {
             baddies.Remove(baddie);
         }
@@ -393,5 +439,14 @@ public class Game : MonoBehaviour
             fxInstance.instance.transform.localScale = Vector3.one * settings.fxScale;
         }
         fxInstances.Add(fxInstance);
+    }
+
+    public void FlashAllSprites(GameObject parent, Color color)
+    {
+        var sprites = parent.GetComponentsInChildren<SpriteRenderer>();
+        foreach (var sprite in sprites)
+        {
+            sprite.material.SetColor("_Flash", color);
+        }
     }
 }

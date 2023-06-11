@@ -19,6 +19,7 @@
     <dwg name="6"/>
     <dwg name="7"/>
     <dwg name="8"/>
+    <dwg name="9"/>
    </drawings>
   </element>
   <element id="3" elementName="LegA" elementFolder="LegA" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
@@ -63,7 +64,7 @@
      <elementSeq exposures="17,20" val="4" id="1"/>
     </column>
     <column type="0" name="ATV-0BAF85CDF0E09182" displayOrder="0" width="100" anonymous="true" id="2">
-     <elementSeq exposures="1-20" val="6" id="2"/>
+     <elementSeq exposures="1-21" val="9" id="2"/>
     </column>
     <column type="0" name="ATV-0BAF85CDF0E0922E" displayOrder="0" width="100" anonymous="true" id="3">
      <elementSeq exposures="1-11,12-14" val="1" id="3"/>
@@ -686,6 +687,7 @@
          <meta keyword="skin_Broccoli" displayName="skin_Broccoli" flags="15" type="DYN_GROUP" linkable="false"/>
          <meta keyword="skin_Tomato" displayName="skin_Tomato" flags="15" type="DYN_GROUP" linkable="false"/>
          <meta keyword="nodegroup" displayName="nodegroup" flags="15" type="STRING" linkable="false"/>
+         <meta keyword="skin_Strawberry" displayName="skin_Strawberry" flags="15" type="DYN_GROUP" linkable="false"/>
         </metas>
         <attrs>
          <skin>
@@ -695,6 +697,7 @@
            <meta keyword="Corn" displayName="Corn" flags="15" type="STRING" linkable="false"/>
            <meta keyword="Broccoli" displayName="Broccoli" flags="15" type="STRING" linkable="false"/>
            <meta keyword="Tomato" displayName="Tomato" flags="15" type="STRING" linkable="false"/>
+           <meta keyword="Strawberry" displayName="Strawberry" flags="15" type="STRING" linkable="false"/>
           </metas>
           <attrs>
            <empty val="Empty"/>
@@ -702,9 +705,10 @@
            <corn val="Corn"/>
            <broccoli val="Broccoli"/>
            <tomato val="Tomato"/>
+           <strawberry val="Strawberry"/>
           </attrs>
          </skin>
-         <currentskin val="Broccoli"/>
+         <currentskin val="Strawberry"/>
          <skinEmpty>
           <metas>
            <meta keyword="idle" displayName="idle" flags="15" type="STRING" linkable="false"/>
@@ -757,6 +761,16 @@
           </attrs>
          </skinTomato>
          <nodegroup val="Veggie"/>
+         <skinStrawberry>
+          <metas>
+           <meta keyword="idle" displayName="idle" flags="15" type="STRING" linkable="false"/>
+           <meta keyword="hit" displayName="hit" flags="15" type="STRING" linkable="false"/>
+          </metas>
+          <attrs>
+           <idle val="9;12"/>
+           <hit val="9;6"/>
+          </attrs>
+         </skinStrawberry>
         </attrs>
        </meta>
       </attrs>

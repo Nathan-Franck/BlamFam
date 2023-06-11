@@ -8,6 +8,8 @@ public class Settings : ScriptableObject
     public GameObject dudePrefab;
     public GameObject veggieBaddyPrefab;
     public GameObject fxPrefab;
+    public AnimationCurve hitFlashCurve;
+    public float dudeRadius;
     public float speed;
     public float jumpSpeedMultiplier;
     public float landingSpeedMultiplier;
